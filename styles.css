@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  background: #f1f5ef;
+  color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 25px 8%;
+  background: #01ff67;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+}
+
+header p {
+  margin: 0;
+  color: #001500;
+}
+
+main {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.intro h2 {
+  margin: 0 0 6px;
+}
+
+.intro p {
+  margin: 0;
+  color: #000000;
+}
+
+.load-button {
+  padding: 10px 14px;
+  background: #000000;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.message {
+  margin: 24px 0 12px;
+  color: #030703;
+}
+
+.plant-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.plant-card {
+  padding: 15px;
+  background: white;
+  border: 1px solid #dce5d9;
+  border-radius: 5px;
+}
+
+.plant-card h3 {
+  margin: 0 0 10px;
+  color: #060b07;
+}
+
+.plant-card p {
+  margin: 6px 0;
+}
+
+footer {
+  padding: 20px;
+  color: #020502;
+  text-align: center;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 22px 20px;
+  }
+
+  .intro {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .plant-list {
+    grid-template-columns: 1fr;
+  }
+}

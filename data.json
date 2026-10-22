@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Sunny",
+    "type": "Sunflower",
+    "room": "Balcony",
+    "lastWatered": "2026-10-21",
+    "waterEveryDays": 2
+  },
+  {
+    "id": 2,
+    "name": "Milo",
+    "type": "Money plant",
+    "room": "Living room",
+    "lastWatered": "2026-10-18",
+    "waterEveryDays": 4
+  },
+  {
+    "id": 3,
+    "name": "Ferny",
+    "type": "Boston fern",
+    "room": "Bedroom",
+    "lastWatered": "2026-10-20",
+    "waterEveryDays": 3
+  },
+  {
+    "id": 4,
+    "name": "Spike",
+    "type": "Cactus",
+    "room": "Study table",
+    "lastWatered": "2026-10-12",
+    "waterEveryDays": 14
+  },
+  {
+    "id": 5,
+    "name": "Lily",
+    "type": "Peace lily",
+    "room": "Kitchen window",
+    "lastWatered": "2026-10-19",
+    "waterEveryDays": 3
+  },
+  {
+    "id": 6,
+    "name": "Rosie",
+    "type": "Rose plant",
+    "room": "Front porch",
+    "lastWatered": "2026-10-20",
+    "waterEveryDays": 2
+  }
+]

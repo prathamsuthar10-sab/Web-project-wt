@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Plant Corner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <center>
+    <h1>My Plant Corner</h1>
+    <p>A simple place to keep track of the plants at home.</p>
+    </center>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div>
+        <h2>Plant list</h2>
+        <p>Sample plant details from a JSON file.</p>
+      </div>
+      <label class="load-button" for="json-file">Open plant data</label>
+      <input type="file" id="json-file" accept=".json,application/json" hidden>
+    </section>
+
+    <p id="message" class="message">Click <strong>Open plant data</strong> and choose <strong>data.json</strong> from this project folder.</p>
+    <section id="plant-list" class="plant-list" aria-live="polite"></section>
+  </main>
+
+  <footer>Plant Care Tracker · Made by pratham suthar</footer>
+  <script src="app.js"></script>
+</body>
+</html>
