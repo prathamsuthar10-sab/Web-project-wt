@@ -8,27 +8,51 @@
 </head>
 <body>
   <header>
-    <center>
     <h1>My Plant Corner</h1>
-    <p>A simple place to keep track of the plants at home.</p>
-    </center>
+    <p>A simple way to keep an eye on my houseplants.</p>
   </header>
 
   <main>
     <section class="intro">
       <div>
         <h2>Plant list</h2>
-        <p>Sample plant details from a JSON file.</p>
+        <p>Browse my plants and check their care schedule.</p>
       </div>
       <label class="load-button" for="json-file">Open plant data</label>
       <input type="file" id="json-file" accept=".json,application/json" hidden>
     </section>
 
-    <p id="message" class="message">Click <strong>Open plant data</strong> and choose <strong>data.json</strong> from this project folder.</p>
+    <section class="summary" aria-label="Collection summary">
+      <p><strong id="total-count">0</strong> plants in the list</p>
+      <p><strong id="due-count">0</strong> need water</p>
+      <p><strong id="ok-count">0</strong> are on schedule</p>
+    </section>
+
+    <section class="filters" aria-label="Plant filters">
+      <label>Search
+        <input id="search" type="search" placeholder="Name, type, or room">
+      </label>
+      <label>Watering
+        <select id="water-filter">
+          <option value="all">All plants</option>
+          <option value="due">Need water</option>
+          <option value="ok">On schedule</option>
+        </select>
+      </label>
+      <label>Sort by
+        <select id="sort-order">
+          <option value="name">Name</option>
+          <option value="room">Room</option>
+          <option value="due">Watering first</option>
+        </select>
+      </label>
+    </section>
+
+    <p id="message" class="message">Choose <strong>data.json</strong> to display the plants.</p>
     <section id="plant-list" class="plant-list" aria-live="polite"></section>
   </main>
 
-  <footer>Plant Care Tracker · Made by pratham suthar</footer>
+  <footer>My Plant Corner · Plant information is loaded from a JSON file</footer>
   <script src="app.js"></script>
 </body>
 </html>

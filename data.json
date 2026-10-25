@@ -4,24 +4,30 @@
     "name": "Sunny",
     "type": "Sunflower",
     "room": "Balcony",
-    "lastWatered": "2026-10-21",
-    "waterEveryDays": 2
+    "lastWatered": "2026-10-22",
+    "waterEveryDays": 2,
+    "sunlight": "Bright, direct light",
+    "careTip": "Turn the pot every few days so it grows evenly."
   },
   {
     "id": 2,
     "name": "Milo",
     "type": "Money plant",
     "room": "Living room",
-    "lastWatered": "2026-10-18",
-    "waterEveryDays": 4
+    "lastWatered": "2026-10-21",
+    "waterEveryDays": 5,
+    "sunlight": "Indirect light",
+    "careTip": "Let the top layer of soil dry before watering."
   },
   {
     "id": 3,
     "name": "Ferny",
     "type": "Boston fern",
     "room": "Bedroom",
-    "lastWatered": "2026-10-20",
-    "waterEveryDays": 3
+    "lastWatered": "2026-10-23",
+    "waterEveryDays": 3,
+    "sunlight": "Soft, indirect light",
+    "careTip": "Keep the soil lightly moist and avoid a hot windowsill."
   },
   {
     "id": 4,
@@ -29,22 +35,28 @@
     "type": "Cactus",
     "room": "Study table",
     "lastWatered": "2026-10-12",
-    "waterEveryDays": 14
+    "waterEveryDays": 14,
+    "sunlight": "Bright light",
+    "careTip": "Use a pot with drainage and let the soil dry between watering."
   },
   {
     "id": 5,
     "name": "Lily",
     "type": "Peace lily",
     "room": "Kitchen window",
-    "lastWatered": "2026-10-19",
-    "waterEveryDays": 3
+    "lastWatered": "2026-10-22",
+    "waterEveryDays": 4,
+    "sunlight": "Medium, indirect light",
+    "careTip": "Keep it away from cold drafts."
   },
   {
     "id": 6,
     "name": "Rosie",
     "type": "Rose plant",
     "room": "Front porch",
-    "lastWatered": "2026-10-20",
-    "waterEveryDays": 2
+    "lastWatered": "2026-10-22",
+    "waterEveryDays": 3,
+    "sunlight": "Several hours of sunlight",
+    "careTip": "Water near the soil rather than over the leaves."
   }
 ]

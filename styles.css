@@ -1,28 +1,28 @@
 body {
   margin: 0;
-  background: #f1f5ef;
-  color: #000000;
+  background: #f3f5f0;
+  color: #27342a;
   font-family: Arial, sans-serif;
 }
 
 header {
-  padding: 25px 8%;
-  background: #01ff67;
+  padding: 24px 8%;
+  background: #d8e8d2;
 }
 
 header h1 {
-  margin: 0 0 8px;
+  margin: 0 0 7px;
   font-size: 30px;
 }
 
 header p {
   margin: 0;
-  color: #001500;
+  color: #4c5e4f;
 }
 
 main {
-  max-width: 850px;
-  margin: 30px auto;
+  max-width: 900px;
+  margin: 28px auto;
   padding: 0 20px;
 }
 
@@ -30,56 +30,134 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 16px;
 }
 
 .intro h2 {
-  margin: 0 0 6px;
+  margin: 0 0 5px;
 }
 
 .intro p {
   margin: 0;
-  color: #000000;
+  color: #647064;
 }
 
 .load-button {
-  padding: 10px 14px;
-  background: #000000;
+  padding: 10px 13px;
+  background: #386942;
   border-radius: 4px;
   color: white;
   cursor: pointer;
 }
 
+.load-button:hover {
+  background: #2e5737;
+}
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.summary p {
+  margin: 0;
+  padding: 11px 14px;
+  background: white;
+  border: 1px solid #dfe5dc;
+  border-radius: 4px;
+}
+
+.summary strong {
+  color: #386942;
+  font-size: 18px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px;
+  background: #e8ede5;
+  border-radius: 4px;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #4e5c50;
+  font-size: 13px;
+}
+
+.filters input,
+.filters select {
+  min-width: 150px;
+  padding: 8px;
+  border: 1px solid #cbd5c8;
+  border-radius: 3px;
+  background: white;
+  color: #27342a;
+  font-size: 14px;
+}
+
 .message {
-  margin: 24px 0 12px;
-  color: #030703;
+  margin: 18px 0 12px;
+  color: #586658;
 }
 
 .plant-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 
 .plant-card {
   padding: 15px;
   background: white;
-  border: 1px solid #dce5d9;
-  border-radius: 5px;
+  border: 1px solid #dce4d8;
+  border-left: 4px solid #699c68;
+  border-radius: 4px;
+}
+
+.plant-card.needs-water {
+  border-left-color: #bd7950;
 }
 
 .plant-card h3 {
   margin: 0 0 10px;
-  color: #060b07;
+  color: #315a38;
 }
 
 .plant-card p {
   margin: 6px 0;
+  font-size: 14px;
+}
+
+.water-status {
+  font-weight: bold;
+  color: #386942;
+}
+
+.needs-water .water-status {
+  color: #a45a32;
+}
+
+details {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #e6eae3;
+}
+
+details summary {
+  color: #386942;
+  cursor: pointer;
 }
 
 footer {
   padding: 20px;
-  color: #020502;
+  color: #647064;
   text-align: center;
   font-size: 13px;
 }
@@ -96,5 +174,12 @@ footer {
 
   .plant-list {
     grid-template-columns: 1fr;
+  }
+
+  .filters label,
+  .filters input,
+  .filters select {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
